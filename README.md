@@ -44,7 +44,7 @@ Then exit from psql.
 
 6. Install git and set FlaskApp project
 ```apt-get install git
-cd /var/www
+   cd /var/www
 mkdir catalog
 git clone https://github.com/vk9141/udacity-item-catalog.git
 mv ./udacity-item-catalog ./catalog
