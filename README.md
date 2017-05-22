@@ -138,12 +138,12 @@ sudo nano /etc/sudoers.d/grader
 ```
 type in ```grader ALL=(ALL:ALL) ALL``` and save 
 
-14. Generate KeyPair on local machine
+14. Generate KeyPair on local machine</br>
 Type ```ssh-keygen``` to generate KeyValuePair</br>
 At the prompt to enter filename, type ```~/.ssh/graderKey```</br>
 Copy the content in graderKey.pub
 
-15. Save the public key to the server
+15. Save the public key to the server</br>
 Switch user as grader ```su - grader```. Note that you may need to enter password
 ```
 mkdir .ssh
@@ -157,13 +157,13 @@ Then paste the content copied in step 14 into this file
 chmod 700 ~/.ssh
 chmod 644 ~/.ssh/authorized_keys
 ```
-Then reload the SSH ```service ssh restart```
+Then reload the SSH ```service ssh restart```</br>
 Now user can remote login to the server as "grader"
 ```
 ssh -i [privateKeyFilename] grader@52.15.168.179
 ```
 
-References:
+References:</br>
 <a href="https://github.com/kongling893/Linux-Server-Configuration-UDACITY">https://github.com/kongling893/Linux-Server-Configuration-UDACITY</a></br>
 <a href="https://github.com/omar-jandali/Udacity-Linux-Server-Configuration-Project">https://github.com/omar-jandali/Udacity-Linux-Server-Configuration-Project</a>
 
