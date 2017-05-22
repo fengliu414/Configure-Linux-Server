@@ -30,11 +30,10 @@ ufw enable
 Then check the firewall status ```ufw status```
 
 5. Install and Configure Postgresql
-Install Postgresql ```sudo apt-get install postgresql
-```
-Check if no remote connections are allowed ```sudo nano /etc/postgresql/9.3/main/pg_hba.conf```
-Login as user "postgres" ```sudo su - postgres```
-Enter postgresql ```psql```
+Install Postgresql ```sudo apt-get install postgresql```</br>
+Check if no remote connections are allowed ```sudo nano /etc/postgresql/9.3/main/pg_hba.conf```</br>
+Login as user "postgres" ```sudo su - postgres```</br>
+Enter postgresql ```psql```</br>
 Create new database, user and set permissions 
 ```postgres=# CREATE DATABASE catalog;
    postgres=# CREATE USER catalog;
