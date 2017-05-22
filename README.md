@@ -54,8 +54,10 @@ cd FlaskApp
 mv project.py __init__.py
 ```
 7. Replace all ```engine = create_engine('sqlite:///cars_database.db')``` to 
-```engine = create_engine('postgresql://catalog:udacity@localhost/catalog')
-``` in __init__.py, database_setup.py, and lotsofcars.py files.
+```
+engine = create_engine('postgresql://catalog:udacity@localhost/catalog')
+``` 
+in __init__.py, database_setup.py, and lotsofcars.py files.
 
 8. Install Flask, SQLAlchemy and modules that support OAuth authentication
 ```
