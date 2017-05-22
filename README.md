@@ -5,4 +5,8 @@ The SSH port number: 2200</br>
 The IP address is: 52.15.168.179 </br>
 
 ## Steps to configure the Linux Server
-1. Update all the installed packages <pre>apt-get update apt-get upgrade</pre>
+1. Update all the installed packages 
+```
+apt-get update
+apt-get upgrade
+```
