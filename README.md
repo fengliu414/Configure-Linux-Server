@@ -35,16 +35,18 @@ Check if no remote connections are allowed ```sudo nano /etc/postgresql/9.3/main
 Login as user "postgres" ```sudo su - postgres```</br>
 Enter postgresql ```psql```</br>
 Create new database, user and set permissions 
-```postgres=# CREATE DATABASE catalog;
-   postgres=# CREATE USER catalog;
-   postgres=# ALTER ROLE catalog WITH PASSWORD 'udacity';
-   postgres=# GRANT ALL PRIVILEGES ON DATABASE catalog TO catalog;
+```
+postgres=# CREATE DATABASE catalog;
+postgres=# CREATE USER catalog;
+postgres=# ALTER ROLE catalog WITH PASSWORD 'udacity';
+postgres=# GRANT ALL PRIVILEGES ON DATABASE catalog TO catalog;
 ```
 Then exit from psql.
 
 6. Install git and set FlaskApp project
-```apt-get install git
-   cd /var/www
+```
+apt-get install git
+cd /var/www
 mkdir catalog
 git clone https://github.com/vk9141/udacity-item-catalog.git
 mv ./udacity-item-catalog ./catalog
