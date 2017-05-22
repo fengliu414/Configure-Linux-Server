@@ -160,7 +160,7 @@ chmod 644 ~/.ssh/authorized_keys
 Then reload the SSH ```service ssh restart```</br>
 Now user can remote login to the server as "grader"
 ```
-ssh -i [privateKeyFilename] grader@52.15.168.179
+ssh -i ~/.ssh/graderKey grader@52.15.168.179
 ```
 
 References:</br>
