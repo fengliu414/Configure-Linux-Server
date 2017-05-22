@@ -162,6 +162,11 @@ Now user can remote login to the server as "grader"
 ```
 ssh -i ~/.ssh/graderKey grader@52.15.168.179
 ```
+17. Diable remote root login
+```
+sudo nano /etc/ssh/sshd_config
+```
+Change the following line ```PermitRootLogin without-password``` to ```PermitRootLogin no```
 
 References:</br>
 <a href="https://github.com/kongling893/Linux-Server-Configuration-UDACITY">https://github.com/kongling893/Linux-Server-Configuration-UDACITY</a></br>
