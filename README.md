@@ -9,10 +9,14 @@ The IP address is: 52.15.168.179 </br>
 ```
 ssh -i ~/.ssh/[SERVER KEY FILE] ubuntu@52.15.168.179 -p 22
 ```
-2. Update all the installed packages 
+2. Update all the installed packages and set time standart
 ```
 sudo apt-get update
 sudo apt-get upgrade
+```
+Then configure local timezone to UTC 
+```
+sudo dpkg-reconfigure tzdata
 ```
 3. Change default SSH port from 22 to 2200
 ```
