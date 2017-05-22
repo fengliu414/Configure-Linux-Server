@@ -57,7 +57,12 @@ mv project.py __init__.py
 ```
 engine = create_engine('postgresql://catalog:udacity@localhost/catalog')
 ``` 
-in __init__.py, database_setup.py, and lotsofcars.py files.
+in __init__.py, database_setup.py, and lotsofcars.py files. Then run
+```
+python database_setup.py
+python lotsofcars.py
+```
+to create the schema of the catalog database and fill in some preset data
 
 8. Install Flask, SQLAlchemy and modules that support OAuth authentication
 ```
@@ -83,7 +88,7 @@ then copy the content below into the file
 import sys
 import logging
 logging.basicConfig(stream=sys.stderr)
-sys.path.insert(0,"/var/www/catalog/")
+sys.path.insert(0,"/var/www/FlaskApp/")
 
 from FlaskApp import app as application
 application.secret_key = 'super_secret_key'
@@ -157,6 +162,10 @@ Now user can remote login to the server as "grader"
 ```
 ssh -i [privateKeyFilename] grader@52.15.168.179
 ```
+
+References:
+<a href="https://github.com/kongling893/Linux-Server-Configuration-UDACITY">https://github.com/kongling893/Linux-Server-Configuration-UDACITY</a></br>
+<a href="https://github.com/omar-jandali/Udacity-Linux-Server-Configuration-Project">https://github.com/omar-jandali/Udacity-Linux-Server-Configuration-Project</a>
 
 
 
